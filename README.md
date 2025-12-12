@@ -28,7 +28,7 @@ Este repositório contém um site estático (apenas **HTML** e **CSS**) desenvol
 1. Clone o repositório:
 
 ```
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/seu-usuario/seu-repo.git](https://github.com/nathalia0902/Desenvolvimento-de-Software-Web.git
 ```
 
 2. Abra o `index.html` no navegador (duplo clique ou `Ctrl+O` → abrir arquivo).
