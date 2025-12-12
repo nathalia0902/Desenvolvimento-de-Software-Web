@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f5f7fa;
+    --cor-principal: #003366;
+    --cor-secundaria: #0066cc;
+    --cor-texto: #333;
+    --cor-destaque: #eaeaea;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+.site-header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 1rem 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 180px;
+}
+
+input[type="text"] {
+    border: 1px solid var(--cor-secundaria);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.menu {
+    background-color: var(--cor-secundaria);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 0.5rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: var(--cor-principal);
+}
+
+#container-principal {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    align-items: flex-start;
+}
+
+article {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.site-conteudo, 
+.curiosidades {
+    background-color: var(--cor-destaque);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: var(--cor-principal);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.75rem;
+}
+
+aside.curiosidades {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+aside h3 {
+    margin-bottom: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+img[alt] {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.site-footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.site-footer .social-links {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-footer a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.site-footer a:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.1);
+}
+
+.site-footer a img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+@media (max-width: 500px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-principal {
+        flex-direction: column;
+    }
+
+    aside.curiosidades {
+        order: 2;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .site-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .search-input {
+        width: 130px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nathalia de Oliveira Lima" />
+    <title>Desenvolvimento de Software WEB</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Desenvolvimento de Software WEB</h1>
+            <div class="pesquisa">
+                <label for="search" class="visually-hidden">Pesquisar no site:</label>
+                <input id="search" type="text" placeholder="Pesquisar..." class="search-input" />
+                <img src="https://avatars.githubusercontent.com/u/00000000?v=4" 
+                     alt="Usuário logado" 
+                     class="logo" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#saiba-mais">Curiosidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-principal">
+
+        <article id="html">
+            <h2>Seja Bem-vindo ao Curso de Desenvolvimento de Software Web!</h2>
+            <p>Nesta página, você encontrará os principais conceitos sobre HTML, CSS e JavaScript.</p>
+
+            <section class="site-conteudo">
+                <h3>Introdução ao HTML</h3>
+                <p>O HTML é a base de toda página web. Ele define a estrutura e o conteúdo de um site.</p>
+                <p>Com o HTML, você cria textos, imagens, links e diversos outros elementos visuais e semânticos.</p>
+
+                <figure>
+                    <img src="https://wproom.com/wp-content/uploads/2018/11/html.png"
+                         alt="Imagem ilustrando o HTML" />
+                    <figcaption>HTML é a estrutura da web</figcaption>
+                </figure>
+            </section>
+
+            <section class="site-conteudo">
+                <h3>Vamos Praticar?</h3>
+                <p>Crie um arquivo <code>index.html</code> e adicione uma estrutura básica com título e parágrafos.</p>
+                <p>Experimente usar tags como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> e <code>&lt;footer&gt;</code>.</p>
+            </section>
+        </article>
+
+        <article id="css">
+            <section class="site-conteudo">
+                <h3>Introdução ao CSS</h3>
+                <p>O CSS é responsável pela aparência das páginas. Ele define cores, tamanhos, margens e muito mais.</p>
+                <p>Com o CSS, é possível transformar um simples HTML em um site visualmente atraente.</p>
+
+                <figure>
+                    <img src="https://wpworld.com.br/wp-content/uploads/2024/01/css.png"
+                         alt="Imagem ilustrando o CSS" />
+                    <figcaption>CSS define o estilo da web</figcaption>
+                </figure>
+            </section>
+            
+            <section class="site-conteudo">
+                <h3>Vamos Praticar?</h3>
+                <p>Crie um arquivo <code>styles.css</code> e conecte-o ao seu HTML com a tag <code>&lt;link&gt;</code>.</p>
+                <p>Experimente mudar a cor do fundo e do texto, adicionar margens e definir fontes diferentes.</p>
+            </section>
+        </article>
+
+        <article id="js">
+            <section class="site-conteudo">
+                <h3>Introdução ao JavaScript</h3>
+                <p>O JavaScript adiciona interatividade às páginas, permitindo respostas dinâmicas do usuário.</p>
+                <p>É usado para validar formulários, criar animações e desenvolver aplicações web completas.</p>
+
+                <figure>
+                    <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png"
+                         alt="Imagem ilustrando o JS" />
+                    <figcaption>JavaScript traz dinamismo à web</figcaption>
+                </figure>
+            </section>
+
+            <section class="site-conteudo">
+                <h3>Vamos Praticar?</h3>
+                <p>Crie um arquivo <code>script.js</code> e use <code>alert()</code> para exibir uma mensagem.</p>
+                <p>Depois, explore como capturar eventos de clique e alterar o conteúdo da página.</p>
+            </section>
+        </article>
+
+        <aside id="saiba-mais" class="curiosidades">
+            <h3>Curiosidades</h3>
+            <ul>
+                <li>HTML significa HyperText Markup Language.</li>
+                <li>CSS significa Cascading Style Sheets.</li>
+                <li>JavaScript é fácil de aprender.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer id="contato" class="site-footer">
+        <p>Desenvolvido por <span class="assinatura">Nathalia Lima</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nathalia-lima-a438b6261/" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Ícone do LinkedIn" width="24" />
+            </a>
+            <a href="https://github.com/nathalia0902" aria-label="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Ícone do GitHub" width="24" />
+            </a>
+            <a href="https://www.instagram.com/seuusuario" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Ícone do Instagram" width="24" />
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
